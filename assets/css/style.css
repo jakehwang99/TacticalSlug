@@ -1,0 +1,134 @@
+@font-face {
+  font-family: Icon;
+  src: url("../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf");
+}
+@font-face {
+  font-family: DIN;
+  src: url("../fonts/DIN Alternate Regular.otf");
+}
+@font-face {
+  font-family: Circula;
+  src: url("../fonts/circula-medium.otf");
+}
+body {
+  background: #e6e6e6;
+}
+#top_bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #EE576A;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*height: 25%;*/
+}
+#page_header {
+  margin-bottom: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 25px;
+  font-family: Circula;
+  text-align: center;
+  color: white;
+  font-size: 57px;
+}
+#nav_bar {
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding-top: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  left: 5%;
+  text-align: center;
+}
+#nav_bar a {
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: DIN;
+  font-size: 1.05em;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin: 15px;
+  text-decoration: none;
+}
+.active {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+}
+#nav_bar a:hover {
+  color: white;
+}
+#content {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  background: white;
+  overflow: scroll;
+  padding-bottom: 10px;
+}
+.content_text {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40px;
+  font-family: DIN;
+  color: #4A4A4A;
+}
+.content_header {
+  margin-top: 45px;
+  width: 85%;
+  margin-left: 7.5%;
+  font-family: Circula;
+  font-size: 45px;
+  color: #4A4A4A;
+}
+.icons_3 {
+  color: #EE576A;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.iconPlusLabel {
+  margin: 50px;
+  display: inline-block;
+  font-family: Icon;
+}
+.iconPlusLabel:not(.label) {
+  font-size: 5em;
+}
+.label {
+  font-size: 0.15em;
+  font-family: DIN;
+}
+.underline {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  width: 80%;
+  margin-left: 10%;
+  height: 2.5px;
+  background: #9B9B9B;
+}
+.notice {
+  text-align: center;
+  font-size: 1.25em;
+}
+.list {
+  margin-top: 15px;
+}
+#nap {
+  margin-top: 15px;
+  font-size: 1.25em;
+}
+table {
+  width: 35%;
+  margin-left: 10%;
+  font-family: DIN;
+  color: #4A4A4A;
+}
+tr {
+  height: 50px;
+}
