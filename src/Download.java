@@ -2,9 +2,9 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.net.URL;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 import org.jsoup.*;
 import org.jsoup.nodes.Document;
@@ -40,7 +40,8 @@ public class Download {
         saveFile(urlList.get(temp), "temp/" + majorList.get(temp) + ".pdf");
     }
 
-    public static int whichMajor(){
+    //returns the position of the url link to the major curriculum chart
+    private static int whichMajor(){
         Scanner scan = new Scanner(System.in);
         String isBS, major, whichBio;
         while(true) {
@@ -64,7 +65,8 @@ public class Download {
         }
     }
 
-    public static int isMajor(String isBS, String input) {
+    //check if there is a major that exists
+    private static int isMajor(String isBS, String input) {
         for(int i = 0; i < majorList.size(); i++){
             if(majorList.get(i).contains(input) && majorList.get(i).contains(isBS))
                 return i;
@@ -73,7 +75,7 @@ public class Download {
     }
 
     //downloads a file
-    public static void saveFile(String url, String file) throws IOException {
+    private static void saveFile(String url, String file) throws IOException {
         URL temp = new URL(url);
         InputStream in = temp.openStream();
         FileOutputStream fos = new FileOutputStream(new File(file));
