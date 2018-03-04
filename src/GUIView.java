@@ -15,9 +15,11 @@ public class GUIView {
         JPanel signin = new JPanel();
         signin.setLayout(null);
 
-        //textpane with the name of the program
-        JTextArea description = new JTextArea();
-        //description.set
+        //textpane with the name of the program //THIS DOESNT WORKKK :((
+        JTextArea title = new JTextArea();
+        title.setText("TACTICALSLUG");
+        title.setEditable(false);
+        signin.add(title);
 
         //textarea with description of the program and the terms to using it
 
@@ -28,7 +30,6 @@ public class GUIView {
         //"i agree" button
         JButton iAgree = new JButton("I Agree");
         iAgree.setBounds((mainFrame.getWidth()/2)-40, 400, 80, 20 );
-
         signin.add(iAgree);
 
         //iAgree.setSize(new Dimension(30, 30));
