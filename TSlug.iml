@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="jsoup-1.11.2" level="application" />
+    <orderEntry type="library" name="pdfbox-app-2.0.8" level="application" />
   </component>
 </module>

@@ -8,7 +8,7 @@ public class PDFSort {
     public static void main(String[] args) throws IOException {
 
         PDFReader pdfManager = new PDFReader();
-        pdfManager.setFilePath("C:\\Users\\nkenn\\Pictures\\CS_BS.pdf");
+        pdfManager.setFilePath("C:\\Users\\nkenn\\Documents\\GitHub\\TacticalSlug\\temp\\Computer Science BS.pdf");
         //System.out.println(pdfManager.ToText());
 
         ArrayList<String> schedule = new ArrayList<String>();
